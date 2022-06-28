@@ -3,7 +3,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            잘가세요
+            <div className='p-160'>
+                하이
+            </div>
         </div>
     );
 };

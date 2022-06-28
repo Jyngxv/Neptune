@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* 여기서부터 커스터마이징 */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/* Mobile Screen */
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .wrapper {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .nt-text-box-01 {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+  }
+  .nt-header-text {
+    font-size: 48px;
+    line-height: 1.25;
+  }
+  .nt-sub-text {
+    font-size: 20px;
+    line-height: 1.25;
+  }
+  .nt-title-text {
+    font-size: 48px;
+    line-height: 1.25;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Tablet Screen */
+@media screen and (min-width: 641px) and (max-width: 1280px) {
+  .container {
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .wrapper {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+  .nt-text-box-01 {
+  }
+  .nt-header-text {
+    font-size: 72px;
+    line-height: 1.2;
+  }
+  .nt-sub-text {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  .nt-title-text {
+    font-size: 64px;
+    line-height: 1.25;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+/* Laptop Screen */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: auto;
+    clear: both;
+  }
+  .wrapper {
+    padding-top: 256px;
+    padding-bottom: 256px;
+  }
+  .nt-text-box-01 {
+    max-width: 640px;
+  }
+  .nt-header-text {
+    font-size: 80px;
+    line-height: 1.14;
+  }
+  .nt-sub-text {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .nt-title-text {
+    font-size: 72px;
+    line-height: 1.25;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.wrapper {
+  position: relative;;
+}
+:hover {
+  transition: all 0.3s ease-out;
+}
+
+li {
+  float: left;
+}
+
+.nt-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.res-mw-0 {
+  max-width: 640px;
+}
+
+.btn-0 {
+  transition: all 0.3s ease-out;
+}
+
+.btn-0:hover {
+  background-color: white;
+  color: #003af1;
 }
