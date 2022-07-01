@@ -1,28 +1,34 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
+const withAnimations = require('animated-tailwindcss');
+
+module.exports = withAnimations({
+  content: ['./src/**/*.{html,js}'],
   theme: {
     screens: {
-      'sm': {'max': '640px'},
-      'md': {'min': '641px', 'max': '1280px'},
-      'lg': '1280px'
+      sm: { max: '640px' },
+      md: { min: '641px', max: '1280px' },
+      lg: '1280px',
     },
     colors: {
-      'transparent': 'transparent',
-      'primary': '#003af1',
-      'secondary': '#00ff81',
-      'black': '#000000',
-      'white': '#ffffff',
-      'neutral': {
+      transparent: 'transparent',
+      primary: '#003af1',
+      secondary: '#00ff81',
+      black: '#000000',
+      white: '#ffffff',
+      neutral: {
         200: '#fafafa',
         300: '#f5f5f5',
         400: '#e0e0e0',
         500: '#b0b0b0',
         600: '#737373',
-        800: '#4E5A67'
-      }
+        800: '#4E5A67',
+        900: '#0E1423',
+      },
     },
     extend: {
+      backgroundImage: {
+        bg01: "url('/public/img/bg01.png')",
+      },
       spacing: {
         '10%': '10%',
         '15%': '15%',
@@ -42,35 +48,38 @@ module.exports = {
         '85%': '85%',
         '90%': '90%',
         '95%': '95%',
-        '4': '4px',
-        '8': '8px',
-        '16': '16px',
-        '20': '20px',
-        '24': '24px',
-        '32': '32px',
-        '40': '40px',
-        '48': '48px',
-        '64': '64px',
-        '96': '96px',
-        '128': '128px',
-        '160': '160px',
-        '256': '256px',
-        '320': '320px',
-        '480': '480px',
-        '560': '560px',
-        '640': '640px',
-        '768': '768px',
-        '960': '960px',
-        '1280': '1280px'
+        '100%': '100%',
+        4: '4px',
+        8: '8px',
+        16: '16px',
+        20: '20px',
+        24: '24px',
+        32: '32px',
+        40: '40px',
+        48: '48px',
+        56: '56px',
+        64: '64px',
+        96: '96px',
+        128: '128px',
+        160: '160px',
+        256: '256px',
+        320: '320px',
+        480: '480px',
+        560: '560px',
+        640: '640px',
+        768: '768px',
+        960: '960px',
+        1024: '1024px',
+        1280: '1280px',
       },
       borderRadius: {
-        '8': '8px',
-        '12': '12px',
-        '20': '20px',
-        '24': '24px',
-        'full': '9999px'
-      }
-    }
+        8: '8px',
+        12: '12px',
+        20: '20px',
+        24: '24px',
+        full: '9999px',
+      },
+    },
   },
   plugins: [],
-}
+});
