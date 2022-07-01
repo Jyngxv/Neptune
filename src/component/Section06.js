@@ -1,10 +1,11 @@
-import React from 'react';
-import { useScroll } from './Usescroll.js';
+import '../App.css';
+import 'aos/dist/aos.css';
+import { useScroll } from './Usescroll';
 
 const Section06 = () => {
   useScroll();
   return (
-    <section id="ddd" className="">
+    <section className="">
       <div className="container">
         <div className="wrapper pb-0">
           <div className="sm:mb-64 mb-128">
@@ -38,11 +39,11 @@ const Section06 = () => {
           </div>
         </div>
       </div>
-      <div className="container-expand">
+      <div className="">
         <div id="expand" className="">
-          {/* <video id="expand" className="" autoPlay loop playsInline muted>
-          <source src="video/large_2x.mp4" type="video/mp4" />
-        </video> */}
+          <video id="expand" className="" autoPlay loop playsInline muted>
+            <source src="video/large_2x.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>
