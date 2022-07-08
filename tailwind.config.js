@@ -4,10 +4,23 @@ const withAnimations = require('animated-tailwindcss');
 module.exports = withAnimations({
   content: ['./src/**/*.{html,js}'],
   theme: {
-    screens: {
-      sm: { max: '640px' },
-      md: { min: '641px', max: '1280px' },
-      lg: '1280px',
+    fontFamily: {
+      Raleway: ['Gilroy', 'sans-seif'],
+    },
+    fontSize: {
+      xs: ['12px', '1.4'],
+      sm: ['16px', '1.4'],
+      tiny: ['20px', '1.6'],
+      base: ['24px', '1.6'],
+      md: ['32px', '1.4'],
+      md2: ['36px', '1.4'],
+      md3: ['40px', '1.4'],
+      lg: ['48px', '1.4'],
+      xl: ['64px', '1.4'],
+      '2xl': ['72px', '1.2'],
+      '3xl': ['80px', '1.2'],
+      '4xl': ['96px', '1.2'],
+      '5xl': ['128px', '1.2'],
     },
     colors: {
       transparent: 'transparent',
@@ -22,12 +35,18 @@ module.exports = withAnimations({
         500: '#b0b0b0',
         600: '#737373',
         800: '#4E5A67',
-        900: '#0E1423',
+      },
+      bgcolor: {
+        100: '#f6f7fb',
+        300: '#111829',
+        600: '#0E1423',
+        900: '#0c111d',
       },
     },
     extend: {
       backgroundImage: {
         bg01: "url('/public/img/bg01.png')",
+        bg03: "url('/public/img/bg03.jpg')",
       },
       spacing: {
         '10%': '10%',
@@ -64,6 +83,7 @@ module.exports = withAnimations({
         160: '160px',
         256: '256px',
         320: '320px',
+        400: '400px',
         480: '480px',
         560: '560px',
         640: '640px',
@@ -75,8 +95,11 @@ module.exports = withAnimations({
       borderRadius: {
         8: '8px',
         12: '12px',
+        16: '16px',
         20: '20px',
         24: '24px',
+        32: '32px',
+        48: '48px',
         full: '9999px',
       },
     },
