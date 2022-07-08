@@ -7,7 +7,6 @@ function Petnumber() {
   const [policy, setPetcount] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-
   useEffect(() => {
     const fetchPetcount = async () => {
       try {
@@ -31,11 +30,7 @@ function Petnumber() {
   if (error) return <div>Error</div>;
   if (!policy) return null;
 
-  return (
-    <div>
-      <CountUp end={policy.saveFirstReviewPoint * 8} enableScrollSpy />
-    </div>
-  );
+  return <CountUp end={policy.saveFirstReviewPoint * 8} separator="," enableScrollSpy />;
 }
 
 export default Petnumber;

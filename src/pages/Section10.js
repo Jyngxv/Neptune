@@ -3,12 +3,12 @@ import Headline from '../components/Headline';
 import Appbtn from '../components/Appbtn';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import Petnumber from '../components/Petnumber';
-import Display from '../components/Display';
 
 const Section10 = () => {
   const { scrollYProgress } = useViewportScroll();
   const scale = useTransform(scrollYProgress, [0.1, 1], [0.2, 1.2]);
-  console.log(<Petnumber />);
+  const temp = <Petnumber />;
+  const temp2 = <span>벌써 {temp}마리가 등록되었어요</span>;
   return (
     <section className="bg-[#0a0a0a]">
       <div className="container ">
@@ -16,7 +16,7 @@ const Section10 = () => {
           <Headline
             textcolor1="text-white"
             textcolor2="text-secondary"
-            c_headline1={<Petnumber />}
+            c_headline1={temp2}
             c_headline2="등록됨"
             textalign="text-center"
             // c_body1="생애 주기 관리는 반려동물의 체구와 나이에 기반하여 7가지 항목으로 관리방법을 안내합니다."
@@ -25,9 +25,6 @@ const Section10 = () => {
         </div>
         <div className="flex flex-col">
           <div className="flex justify-center mb-128">
-            <h1 className="text-2xl text-white">
-              <Petnumber />
-            </h1>
             <Appbtn btn_name="너도 등록해" />
           </div>
           <motion.div className="mx-auto w-1024" style={{ scale }}>

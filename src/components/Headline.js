@@ -8,8 +8,8 @@ const Headline = (props) => {
   return (
     <div className="wrapper">
       <div className="flex flex-col">
-        <div className={headline1}>{props.c_headline1}</div>
-        <div className={headline2}>{props.c_headline2}</div>
+        <p className={headline1}>{props.c_headline1}</p>
+        <p className={headline2}>{props.c_headline2}</p>
         <p className={body2}>{props.c_body1}</p>
         <p className={body2}>{props.c_body2}</p>
       </div>
