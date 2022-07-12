@@ -13,9 +13,9 @@ const Headline = (props) => {
       opacity: 50,
     },
   };
-  const headline1 = classnames('text-md2 md:text-xl xl:text-xl font-extrabold', props.textcolor1, props.textalign);
-  const headline2 = classnames('text-md2 md:mt-[-12px] md:text-xl xl:text-xl font-extrabold mb-24', props.textcolor2, props.textalign);
-  const body2 = classnames('text-tiny md:text-md xl:text-md font-medium text-neutral-600 whitespace-pre-wrap');
+  const headline1 = classnames('text-md2 md:text-lg xl:text-xl font-extrabold', props.textcolor1, props.textalign);
+  const headline2 = classnames('text-md2 md:text-lg xl:text-xl font-extrabold mb-24', props.textcolor2, props.textalign);
+  const body2 = classnames('text-tiny md:text-base xl:text-md font-medium text-neutral-900 whitespace-pre-wrap', props.textcolor3);
   return (
     <div className="wrapper">
       <div className="flex flex-col">

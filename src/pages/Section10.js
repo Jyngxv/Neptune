@@ -16,6 +16,7 @@ const Section10 = () => {
           <Headline
             textcolor1="text-white"
             textcolor2="text-secondary"
+            textcolor3="text-neutral-900"
             c_headline1={temp2}
             c_headline2="지금 바로 등록해보세요"
             textalign="text-center"

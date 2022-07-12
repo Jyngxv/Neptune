@@ -13,6 +13,7 @@ const Section07 = () => {
           <Headline
             textcolor1="text-black"
             textcolor2="text-primary"
+            textcolor3="text-neutral-900"
             c_headline1="섹션7"
             c_headline2="수의사에게 물어봐요"
             c_body1="생애 주기 관리는 반려동물의 체구와 나이에 기반하여 7가지 항목으로 관리방법을 안내합니다."

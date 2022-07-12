@@ -8,13 +8,13 @@ const Section01 = () => {
     <section className="h-screen">
       <div>
         <Dimmed />
-        <div className="absolute bottom-10% xl:w-1280 left-0 right-0 mx-auto xl:bottom-15%">
+        <div className="absolute bottom-[7%] xl:w-1280 xl:left-0 xl:right-0 mx-auto xl:bottom-10%">
           <div className="px-24 mx-auto xl:px-0">
             <Display
               textcolor1="text-white"
               textcolor2="text-secondary"
               c_display1="HYPER"
-              c_display2="PETSONALIZED"
+              c_display2="PETSONALIZATION"
               c_body1="내 반려동물에게 딱 맞춘 커머스 플랫폼"
               // c_body2="초개인화 맞춤형 펫 커머스 플랫폼"
             ></Display>

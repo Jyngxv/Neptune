@@ -13,6 +13,7 @@ module.exports = withAnimations({
       sm: ['16px', '1.4'],
       tiny: ['20px', '1.5'],
       base: ['24px', '1.5'],
+      base2: ['28px', '1.4'],
       md: ['32px', '1.4'],
       md2: ['36px', '1.4'],
       md3: ['40px', '1.25'],
@@ -22,6 +23,7 @@ module.exports = withAnimations({
       '3xl': ['80px', '1.2'],
       '4xl': ['96px', '1.2'],
       '5xl': ['128px', '1.2'],
+      '6xl': ['160px', '0.8'],
     },
     colors: {
       transparent: 'transparent',
@@ -36,6 +38,7 @@ module.exports = withAnimations({
         500: '#b0b0b0',
         600: '#5e6e7e',
         800: '#4E5A67',
+        900: '#0a0a0a',
       },
       bgcolor: {
         100: '#f6f7fb',
@@ -92,7 +95,6 @@ module.exports = withAnimations({
         300: '300px',
         320: '320px',
         360: '360px',
-
         400: '400px',
         480: '480px',
         560: '560px',

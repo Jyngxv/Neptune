@@ -10,6 +10,7 @@ const Section05 = () => {
           <Headline
             textcolor1="text-white"
             textcolor2="text-secondary"
+            textcolor3="text-neutral-900"
             c_headline1="섹션05"
             c_headline2="반려동물 슈퍼케어"
             c_body1="사료에서 끝나는 것이 아닌간식, 영양제, 용품까지 섬세하게 고민없는 쇼핑을 도와줍니다."
