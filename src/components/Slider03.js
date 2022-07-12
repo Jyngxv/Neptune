@@ -10,7 +10,7 @@ export default () => {
     <Swiper
       effect={'cards'}
       autoplay={{
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
       }}
       centeredSlides={true}

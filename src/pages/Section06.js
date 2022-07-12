@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Headline from '../components/Headline';
 import Tab from '../components/Tab01';
+import Tab03 from '../components/Tab03';
 import { useRive } from '@rive-app/react-canvas';
 
 const Section06 = () => {
@@ -11,8 +12,8 @@ const Section06 = () => {
   const { RiveComponent, rive } = useRive(params);
   return (
     <section>
-      <div className="container">
-        <div className="mb-128">
+      <div className="container px-24 pt-96 md:px-48 md:py-128 xl:px-0 xl:py-256">
+        <div className="mb-32 md:mb-96 xl:mb-128">
           <Headline
             textcolor1="text-black"
             textcolor2="text-primary"
@@ -22,9 +23,12 @@ const Section06 = () => {
             c_body2="고민관리는 15가지 고민 중 선택한 3가지 고민에 따른 관리방법과 솔루션을 제공합니다."
           ></Headline>
         </div>
-        <div className="flex flex-row">
+        <div className="hidden md:flex-row md:flex">
           <Tab></Tab>
         </div>
+      </div>
+      <div className="flex flex-row md:hidden">
+        <Tab03></Tab03>
       </div>
     </section>
   );

@@ -4,11 +4,11 @@ import Headline from '../components/Headline';
 const Section01 = () => {
   return (
     <section>
-      <div className="container">
+      <div className="container px-24 py-96 md:px-48 md:py-128 xl:px-0 xl:py-256">
         <div className="wrapper">
           <div className="flex flex-col">
             <div className="mx-auto mb-64">
-              <video className="w-80% md:w-60% lg:w-40% m-auto" autoPlay loop muted>
+              <video className="w-80% md:w-60% xl:w-40% m-auto" autoPlay loop muted>
                 <source src="video/video01.mp4" type="video/mp4" />
               </video>
             </div>

@@ -5,8 +5,8 @@ import '../App.css';
 const Section05 = () => {
   return (
     <section className="bg-bgcolor-900">
-      <div className="container pb-0">
-        <div className="mb-64 md:mb-96 lg:mb-128">
+      <div className="container px-24 pb-0 py-96 md:px-48 md:pt-128 xl:px-0 xl:pt-256">
+        <div className="mb-64 md:mb-96 xl:mb-128">
           <Headline
             textcolor1="text-white"
             textcolor2="text-secondary"
@@ -17,7 +17,24 @@ const Section05 = () => {
           ></Headline>
         </div>
       </div>
-      <div className="pb-256">
+      <div className="pl-24 overflow-x-auto pb-96 whitespace-nowrap md:hidden">
+        <div className="inline-block mr-24">
+          <img className="w-256" src="img/screen02.png"></img>
+        </div>
+        <div className="inline-block mr-24">
+          <img className="w-256" src="img/screen02.png"></img>
+        </div>
+        <div className="inline-block mr-24">
+          <img className="w-256" src="img/screen02.png"></img>
+        </div>
+        <div className="inline-block mr-24">
+          <img className="w-256" src="img/screen02.png"></img>
+        </div>
+        <div className="inline-block mr-24 ">
+          <img className="w-256" src="img/screen02.png"></img>
+        </div>
+      </div>
+      <div className="hidden md:block md:pb-128 xl:pb-256">
         <Slider01></Slider01>
       </div>
     </section>

@@ -2,8 +2,15 @@
 * {
   transition: all 0.3s ease-out;
 }
+section {
+  overflow-x: hidden;
+}
 p {
+  font-family: Pretendard, sans-serif;
   word-break: keep-all;
+}
+body {
+  overflow-x: hidden;
 }
 /* Mobile Screen */
 .container {
@@ -12,9 +19,6 @@ p {
 }
 
 @media screen and (max-width: 640px) {
-  .container {
-    padding: 64px 24px;
-  }
   .container_header {
     padding-left: 24px;
     padding-right: 24px;
@@ -22,9 +26,6 @@ p {
 }
 
 @media screen and (max-width: 1024px) {
-  .container {
-    padding: 96px 48px;
-  }
   .container_header {
     padding-left: 48px;
     padding-right: 48px;
@@ -40,7 +41,6 @@ p {
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1280px !important;
-    padding: 256px 0;
   }
   .container_header {
     max-width: 1280px;
@@ -92,7 +92,7 @@ li {
 }
 
 .linear-wipe {
-  background: linear-gradient(to right, #fff 20%, #00ff81 40%, #00ff81 60%, #fff 80%);
+  background: linear-gradient(to left, #fff 20%, #00ff81 40%, #00ff81 60%, #fff 80%);
   background-size: 200% auto;
   color: #000;
   background-clip: text;
@@ -111,10 +111,23 @@ mark {
   background: linear-gradient(to top, #ffff00 30%, transparent 30%);
 }
 
-.tfskew {
-  -moz-transform: translate(-1px, 0px) skew(63deg, -21deg);
-  -webkit-transform: translate(-1px, 0px) skew(63deg, -21deg);
-  -o-transform: translate(-1px, 0px) skew(63deg, -21deg);
-  -ms-transform: translate(-1px, 0px) skew(63deg, -21deg);
-  transform: scale(0.4) rotate(7deg) translate(-7px, 24px) skew(68deg, -33deg);
+.hideMenuNav {
+  display: none;
+}
+
+.showMenuNav {
+  overflow-y: hidden;
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: black;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }

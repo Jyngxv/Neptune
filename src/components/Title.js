@@ -2,9 +2,9 @@ import React from 'react';
 import classnames from 'classnames';
 
 const Title = (props) => {
-  const title1 = classnames('text-md md:text-md lg:text-md font-bold', props.textcolor1);
-  const title2 = classnames('text-md md:text-md lg:text-md font-bold mb-24', props.textcolor2);
-  const body3 = classnames('text-tiny md:text-base lg:text-base font-medium text-neutral-800 whitespace-pre-wrap');
+  const title1 = classnames('text-md md:text-md xl:text-md font-bold', props.textcolor1);
+  const title2 = classnames('text-md md:text-md xl:text-md font-bold mb-24', props.textcolor2);
+  const body3 = classnames('text-tiny md:text-base xl:text-base font-medium text-neutral-800 whitespace-pre-wrap');
   return (
     <div className="wrapper">
       <div className="flex flex-col">

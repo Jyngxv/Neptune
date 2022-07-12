@@ -22,22 +22,22 @@ class Tab extends React.Component {
 
   render() {
     return (
-      <div className="flex flex-row w-100%">
-        <div className="flex items-center basis-1/3">
+      <div className="flex flex-col xl:flex-row w-100%">
+        <div className="flex items-center mb-32 grow md:mb-64 xl:mb-0 xl:basis-1/3">
           <ul>
-            <p className="font-bold leading-loose text-md">
+            <p className="text-base font-bold md:text-md2 md:leading-relaxed xl:leading-loose xl:block xl:text-md3">
               <li className={`${this.state.menu === 0 ? 'active' : ''}`} onClick={() => this.changeMenu(0)}>
                 라이프사이클 관리
               </li>
             </p>
-            <p className="font-bold leading-loose text-md">
+            <p className="text-base font-bold xl:leading-loose md:leading-relaxed xl:block md:text-md2 xl:text-md3">
               <li className={`${this.state.menu === 1 ? 'active' : ''}`} onClick={() => this.changeMenu(1)}>
                 고민 관리
               </li>
             </p>
           </ul>
         </div>
-        <div className="basis-2/3">
+        <div className="xl:basis-2/3">
           <div className="ml-auto contentArea">{menuList[this.state.menu]}</div>
         </div>
       </div>

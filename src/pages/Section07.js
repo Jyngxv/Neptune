@@ -4,12 +4,12 @@ import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 const Section07 = () => {
   const { scrollYProgress } = useViewportScroll();
-  const scale = useTransform(scrollYProgress, [0.1, 1], [0.01, 2.2]);
+  const scale = useTransform(scrollYProgress, [0.1, 1], [0.01, 2.1]);
 
   return (
     <section>
-      <div className="container">
-        <div className="mb-128">
+      <div className="container px-24 py-96 md:px-48 md:py-128 xl:px-0 xl:py-256">
+        <div className="mb-32 md:mb-128 1234">
           <Headline
             textcolor1="text-black"
             textcolor2="text-primary"
@@ -20,10 +20,13 @@ const Section07 = () => {
           ></Headline>
         </div>
         <div className="">
-          <motion.div className="videoss" style={{ scale }}>
+          <motion.div className="hidden md:block" style={{ scale }}>
             <video className="videoss" autoPlay loop playsInline muted>
               <source src="video/large_2x.mp4" type="video/mp4" />
             </video>
+          </motion.div>
+          <motion.div className="md:hidden">
+            <img className="mx-auto w-300" src=" img/device01.png"></img>
           </motion.div>
         </div>
       </div>

@@ -2,10 +2,10 @@ import React from 'react';
 import classnames from 'classnames';
 
 const Display = (props) => {
-  const display1 = classnames('font-Gilory text-center lg:text-left text-lg md:text-2xl lg:text-4xl font-black', props.textcolor1);
-  const display2 = classnames('linear-wipe font-Gilroy text-center lg:text-left text-lg md:text-2xl lg:text-4xl font-black mb-16');
-  const body1 = classnames('text-center lg:text-left text-tiny md:text-base lg:text-md font-bold text-neutral-300 whitespace-pre-wrap');
-  const body2 = classnames('text-center lg:text-left text-tiny md:text-base lg:text-base font-bold text-neutral-300 whitespace-pre-wrap');
+  const display1 = classnames('text-center xl:text-left text-xl md:text-5xl xl:text-4xl font-extrabold', props.textcolor1);
+  const display2 = classnames('linear-wipe mt-[-12px] xl:mt-0 text-center xl:text-left text-md3 md:text-2xl xl:text-4xl font-extrabold xl:mb-16 mb-8');
+  const body1 = classnames('text-center xl:text-left text-tiny md:text-md xl:text-md font-medium text-neutral-300 whitespace-pre-wrap');
+  const body2 = classnames('text-center xl:text-left text-tiny md:text-base xl:text-base font-bold text-neutral-300 whitespace-pre-wrap');
 
   return (
     <div className="pb-48">

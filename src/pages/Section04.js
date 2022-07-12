@@ -5,9 +5,9 @@ import Slider03 from '../components/Slider03';
 const Section04 = () => {
   return (
     <section className="bg-bgcolor-600">
-      <div className="container">
-        <div className="flex flex-row mb-64 md:mb-96 lg:mb-128">
-          <div className="basis-1/2">
+      <div className="container px-24 py-96 md:px-48 md:py-128 xl:px-0 xl:py-256">
+        <div className="flex flex-col xl:flex-row md:mb-0 xl:mb-128">
+          <div className="mb-64 md:mb-120 xl:basis-1/2">
             <div className="flex flex-col">
               <div className="">
                 <Headline
@@ -19,7 +19,7 @@ const Section04 = () => {
                   c_body2="여기에 얼마나 먹여야하는지까지도, 모든 것에 대한 고민이 사라지죠."
                 ></Headline>
               </div>
-              <div className="hidden md:block lg:block">
+              <div className="md:block xl:block">
                 <Title
                   textcolor1="text-white"
                   textcolor2="text-secondary"
@@ -31,25 +31,24 @@ const Section04 = () => {
                 <div className="py-24">
                   <ul>
                     <li>
-                      <img className="h-48 mr-32 opacity-50 md:h-64 lg:h-64 hover:opacity-100" src="img/logo-snu.png" alt="서울대학교 수의과대학" />
+                      <img className="mr-32 opacity-50 h-36 xl:h-48 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-snu.png" alt="서울대학교 수의과대학" />
                     </li>
                     <li>
-                      <img className="h-48 mr-32 opacity-50 md:h-64 lg:h-64 hover:opacity-100" src="img/logo-aafco.png" />
+                      <img className="mr-32 opacity-50 h-36 xl:h-48 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-aafco.png" />
                     </li>
                     <li>
-                      <img className="h-48 mr-32 opacity-50 md:h-64 lg:h-64 hover:opacity-100" src="img/logo-fediaf.png" />
+                      <img className="mr-32 opacity-50 h-36 xl:h-48 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-fediaf.png" />
                     </li>
                     <li>
-                      <img className="h-48 mr-32 opacity-50 md:h-64 lg:h-64 hover:opacity-100" src="img/logo-nrc.png" />
+                      <img className="mr-32 opacity-50 h-36 xl:h-48 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-nrc.png" />
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="basis-1/2">
-            <div className="ml-auto w-[360px]">
+          <div className="xl:basis-1/2">
+            <div className="mx-auto mr-auto w-70% md:w-400 xl:w-[360px]">
               {/* <img className="mx-auto " src="img/device01.png" /> */}
               <Slider03></Slider03>
             </div>
