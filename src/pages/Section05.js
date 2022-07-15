@@ -4,15 +4,15 @@ import Slider01 from '../components/Slider01';
 import '../App.css';
 const Section05 = () => {
   return (
-    <section className="bg-bgcolor-900">
+    <section className="bg-black">
       <div className="container px-24 pb-0 py-96 md:px-48 md:pt-128 xl:px-0 xl:pt-256">
         <div className="mb-64 md:mb-96 xl:mb-128">
           <Headline
             textcolor1="text-white"
             textcolor2="text-secondary"
-            textcolor3="text-neutral-900"
-            c_headline1="섹션05"
-            c_headline2="반려동물 슈퍼케어"
+            textcolor3="text-neutral-500"
+            c_headline1="빈틈없는"
+            c_headline2="과학적인 추천"
             c_body1="사료에서 끝나는 것이 아닌간식, 영양제, 용품까지 섬세하게 고민없는 쇼핑을 도와줍니다."
             c_body2="여기에 얼마나 먹여야하는지까지도, 모든 것에 대한 고민이 사라지죠."
           ></Headline>

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import '../style/swiper.css';
 import 'swiper/css/effect-cards';
-import 'swiper/css';
 import { EffectCards, Autoplay } from 'swiper';
 
 export default () => {

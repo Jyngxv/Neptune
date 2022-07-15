@@ -8,20 +8,20 @@ const Section01 = () => {
     <section className="h-screen">
       <div>
         <Dimmed />
-        <div className="absolute bottom-[7%] xl:w-1280 xl:left-0 xl:right-0 mx-auto xl:bottom-10%">
-          <div className="px-24 mx-auto xl:px-0">
+        <div className="absolute bottom-[7%] w-100% xl:w-1280 xl:left-0 xl:right-0 mx-auto xl:bottom-10%  overflow-x-hidden">
+          <div className="mx-auto xl:px-0">
             <Display
               textcolor1="text-white"
               textcolor2="text-secondary"
               c_display1="HYPER"
               c_display2="PETSONALIZATION"
-              c_body1="내 반려동물에게 딱 맞춘 커머스 플랫폼"
+              c_body1="내 반려동물에게 딱 맞춘 커머스 플랫폼 - 푸드"
               // c_body2="초개인화 맞춤형 펫 커머스 플랫폼"
             ></Display>
           </div>
           <div className="">
             <a href="https://pood.onelink.me/TunM/dee08b7c" target="_blank">
-              <Appbtn btn_name="앱 다운로드"></Appbtn>
+              <Appbtn btn_name="푸드 앱 다운로드"></Appbtn>
             </a>
           </div>
         </div>

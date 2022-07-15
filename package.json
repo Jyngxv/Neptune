@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.3.5",
     "react-scripts": "5.0.1",
+    "react-sequence-animator": "^2.3.0",
     "react-tabs": "^5.1.0",
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.53.0",

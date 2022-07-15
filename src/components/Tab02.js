@@ -3,13 +3,19 @@ import React, { Component } from 'react';
 import '../style/tab.css';
 import Commerce from './Commerce';
 import { tab } from '@testing-library/user-event/dist/tab';
-import Slier02 from '../components/Slider02';
 
 const menuList = {
-  0: <Commerce c_text1="지금 만나보세요" c_text2="정말로요?" c_text3="이 곳에 임시 문구" c_img="img/device01.png"></Commerce>,
-  1: <Commerce c_text1="당장 만나보세요" c_text2="정말로요?" c_text3="이 곳에 임시 문구" c_img="img/device01.png"></Commerce>,
-  2: <Commerce c_text1="롸잇나우 만나보세요" c_text2="정말로요?" c_text3="이 곳에 임시 문구" c_img="img/device01.png"></Commerce>,
-  3: <Commerce c_text1="만나보세요" c_text2="정말로요?" c_text3="이 곳에 임시 문구" c_img="img/device01.png"></Commerce>,
+  0: <Commerce c_text1="오늘이 지나면" c_text2="신데랄라처럼 사라져요" c_text3="365일 24시간 타임세일" c_img="img/img_sec08_device_01.png"></Commerce>,
+  1: (
+    <Commerce
+      c_text1="인기가 많다는 것은"
+      c_text2="그만한 이유가 있는 법"
+      c_text3="오늘, 주간, 월간 베스트 상품"
+      c_img="img/img_sec08_device_01.png"
+    ></Commerce>
+  ),
+  2: <Commerce c_text1="차원이 다른" c_text2="빠른 직배송 서비스" c_text3="직배송 상품으로 한번에, 빠르게" c_img="img/img_sec08_device_01.png"></Commerce>,
+  3: <Commerce c_text1="천하제일" c_text2="멍냥이 자랑대회" c_text3="참가만해도 포인트 지급" c_img="img/img_sec08_device_01.png"></Commerce>,
 };
 
 class Tab extends React.Component {
@@ -28,24 +34,24 @@ class Tab extends React.Component {
   render() {
     return (
       <div className="flex flex-col w-100% tab02">
-        <div className="mb-64 md:mb-128">
+        <div className="mb-96">
           <ul className="">
             <li className={`${this.state.menu === 0 ? 'active' : ''}`} onClick={() => this.changeMenu(0)}>
-              <p className="mr-16 font-bold leading-loose md:mr-32 first-line:md:text-md text-tiny xl:text-md2 xl:mr-48">투데이</p>
+              <p className="mr-16 text-base font-bold leading-loose cursor-pointer md:mr-32 md:text-md xl:text-md3 xl:mr-32 xl:hover:text-black">오늘만 할인</p>
             </li>
             <li className={`${this.state.menu === 1 ? 'active' : ''}`} onClick={() => this.changeMenu(1)}>
-              <p className="mr-16 font-bold leading-loose md:mr-32 md:text-md text-tiny xl:text-md2 xl:mr-48">랭킹</p>
+              <p className="mr-16 text-base font-bold leading-loose cursor-pointer md:mr-32 md:text-md xl:text-md3 xl:mr-32 xl:hover:text-black">랭킹</p>
             </li>
             <li className={`${this.state.menu === 2 ? 'active' : ''}`} onClick={() => this.changeMenu(2)}>
-              <p className="mr-16 font-bold leading-loose md:mr-32 md:text-md text-tiny xl:text-md2 xl:mr-48">푸드 배송</p>
+              <p className="mr-16 text-base font-bold leading-loose cursor-pointer md:mr-32 md:text-md xl:text-md3 xl:mr-32 xl:hover:text-black">푸드 배송</p>
             </li>
             <li className={`${this.state.menu === 3 ? 'active' : ''}`} onClick={() => this.changeMenu(3)}>
-              <p className="mr-16 font-bold leading-loose md:mr-32 md:text-md text-tiny xl:text-md2 xl:mr-48">포토 어워즈</p>
+              <p className="mr-16 text-base font-bold leading-loose cursor-pointer md:mr-32 md:text-md xl:text-md3 xl:mr-32 xl:hover:text-black">포토 어워즈</p>
             </li>
           </ul>
         </div>
-        <div className="basis-2/3">
-          <div className="ml-auto contentArea">{menuList[this.state.menu]}</div>
+        <div className="">
+          <div className="ml-auto contentArea h-[700px] overflow-hidden">{menuList[this.state.menu]}</div>
         </div>
       </div>
     );

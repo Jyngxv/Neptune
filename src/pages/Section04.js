@@ -1,61 +1,71 @@
 import React from 'react';
 import Headline from '../components/Headline';
 import Title from '../components/Title';
-import Slider03 from '../components/Slider03';
+import Slider02 from '../components/Slider02';
+import { motion, Variants } from 'framer-motion';
+
 const Section04 = () => {
+  const lineUpToBottom: variants = {
+    offscreen: {
+      height: 0,
+      opacity: 0,
+    },
+    onscreen: {
+      height: 1200,
+      opacity: 100,
+    },
+  };
+
   return (
-    <section className="bg-bgcolor-600">
-      <div className="container px-24 py-96 md:px-48 md:py-128 xl:px-0 xl:py-256">
-        <div className="flex flex-col xl:flex-row md:mb-0 xl:mb-128">
-          <div className="mb-64 md:mb-120 xl:basis-1/2">
-            <div className="flex flex-col">
-              <div className="">
-                <Headline
-                  textcolor1="text-white"
-                  textcolor2="text-secondary"
-                  c_headline1="FOUR"
-                  c_headline2="반려동물 슈퍼케어"
-                  c_body1="사료에서 끝나는 것이 아닌간식, 영양제, 용품까지 섬세하게 고민없는 쇼핑을 도와줍니다."
-                  c_body2="여기에 얼마나 먹여야하는지까지도, 모든 것에 대한 고민이 사라지죠."
-                ></Headline>
+    <section className="relative overflow-hidden bg-black">
+      <div className="container px-24 py-96 md:px-48 md:py-128 xl:px-0 xl:py-128">
+        <div className="flex flex-col">
+          <div className="relative">
+            <div className="w-300 xl:w-[400px] mx-auto mb-48 xl:mb-0">
+              <div className="absolute left-0 right-0 z-20 mx-auto w-300 xl:w-[400px]">
+                <img src="../img/device0.png" />
               </div>
-              <div className="md:block xl:block">
-                <Title
-                  textcolor1="text-white"
-                  textcolor2="text-secondary"
-                  // textcolor3="text-neutral-900"
-                  // c_title1="과학적일 수 밖에없는 이유"
-                  // c_title2="반려동물 슈퍼케어"
-                  // c_body1="사료에서 끝나는 것이 아닌간식, 영양제, 용품까지 섬세하게 고민없는 쇼핑을 도와줍니다."
-                  // c_body2="여기에 얼마나 먹여야하는지까지도, 모든 것에 대한 고민이 사라지죠."
-                ></Title>
-                <div className="py-24">
-                  <ul>
-                    <li>
-                      <img className="mr-32 opacity-50 h-36 xl:h-48 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-snu.png" alt="서울대학교 수의과대학" />
-                    </li>
-                    <li>
-                      <img className="mr-32 opacity-50 h-36 xl:h-48 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-aafco.png" />
-                    </li>
-                    <li>
-                      <img className="mr-32 opacity-50 h-36 xl:h-48 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-fediaf.png" />
-                    </li>
-                    <li>
-                      <img className="mr-32 opacity-50 h-36 xl:h-48 md:h-64 xl:h-64 hover:opacity-100" src="img/logo-nrc.png" />
-                    </li>
-                  </ul>
-                </div>
+              <div className="z-10">
+                <Slider02></Slider02>
               </div>
             </div>
-          </div>
-          <div className="xl:basis-1/2">
-            <div className="mx-auto mr-auto w-70% md:w-400 xl:w-[360px]">
-              {/* <img className="mx-auto " src="img/device01.png" /> */}
-              <Slider03></Slider03>
+            <div className="overflow-hidden md:absolute md:top-0 md:left-0">
+              <p className="absolute text-md md:text-xl xl:text-9xl font-black text-center text-[#1a1a1a] w-100% hover:text-secondary font-Oswald uppercase ">
+                NOT YOUR FAULT
+              </p>
+              <p className="text-md md:text-xl font-regular text-[#1a1a1a] w-100% hover:text-secondary linear-wipe-2">
+                In Asia, there is a great demand on the global media enterprises such as CJ E&M and Tencent includinglarge in-house agencies like Dentsu,
+                Hakuhodo and Cheil. They consume a massive music sources to digital media, retail, event, exhibition, PR, outdoor and sports marketing as well
+                as broadcasting and printing media. We exerted our best efforts to the localization for the large media clients to use the marketing solution.In
+                Asia, there is a <span className="text-secondary">great</span> demand on the global media enterprises such as CJ E&M and Tencent includinglarge
+                in-house agencies like Dentsu, Hakuhodo and Cheil. They consume a massive music sources to digital media, retail, event, exhibition, PR, outdoor
+                and sports marketing as well as broadcasting and printing media. We exerted our best efforts to the localization for the large media clients to
+                use the marketing solution.In Asia, there is a great demand on the global media enterprises such as CJ E&M and Tencent includinglarge in-house
+                agencies like Dentsu, Hakuhodo and Cheil. They consume a <span className="!text-secondary">massive</span> music sources to digital media,
+                retail, event, exhibition, PR, outdoor and sports marketing as well as broadcasting and printing media. We exerted our best efforts to the
+                localization for the large media clients to use the marketing solution.
+              </p>
             </div>
+            {/* <div className="md:absolute md:top-[320px] md:left-0 xl:left-32">
+              <p className="text-md md:text-2xl font-bold text-neutral-500 w-[300px] hover:text-white">수의학 기반</p>
+              <p className="text-md md:text-2xl  font-bold text-neutral-500 w-[300px] hover:text-white">알고리즘으로</p>
+              <p className="text-md md:text-2xl  font-bold text-neutral-500 w-[300px] hover:text-white">최적의 상품 추천</p>
+            </div> */}
+            {/* <div className="md:absolute md:top-[320px] md:right-[-160px] xl:right-0">
+              <p className="text-md md:text-2xl  font-bold text-neutral-500 w-[270x] hover:text-white">수의학 기반</p>
+              <p className="text-md md:text-2xl  font-bold text-neutral-500 w-[270px] hover:text-white">나이와 고민</p>
+              <p className="text-md md:text-2xl  font-bold text-neutral-500 w-[270px] hover:text-white">건강관리</p>
+            </div> */}
           </div>
         </div>
       </div>
+      <motion.div
+        className="absolute w-8 top-0 left-50% bg-secondary z-60 overflow-auto"
+        variants={lineUpToBottom}
+        initial="offscreen"
+        whileInView="onscreen"
+        transition={{ duration: 1.5 }}
+      ></motion.div>
     </section>
   );
 };

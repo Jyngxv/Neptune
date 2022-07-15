@@ -17,23 +17,23 @@ export default () => {
       }}
       breakpoints={{
         640: {
-          slidesPerView: 1.5,
-        },
-        768: {
           slidesPerView: 2,
         },
-        1024: {
+        768: {
           slidesPerView: 3,
         },
-        1536: {
+        1024: {
           slidesPerView: 4,
         },
+        1536: {
+          slidesPerView: 4.5,
+        },
         2000: {
-          slidesPerView: 5,
+          slidesPerView: 6,
         },
       }}
       loop={true}
-      navigation={true}
+      navigation={false}
       modules={[Autoplay, Navigation]}
       className="slider01"
     >

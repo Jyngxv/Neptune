@@ -30,7 +30,7 @@ function Petnumber() {
   if (error) return <div>Error</div>;
   if (!policy) return null;
 
-  return <CountUp end={policy.saveFirstReviewPoint * 8} separator="," enableScrollSpy />;
+  return <CountUp end={policy.saveFirstReviewPoint * 8} separator="," enableScrollSpy duration={1} />;
 }
 
 export default Petnumber;

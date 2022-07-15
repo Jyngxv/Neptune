@@ -26,11 +26,11 @@
 
 .slider01 .swiper-slide img {
   display: block;
-  width: 370px;
+  width: 320px;
   object-fit: cover;
 }
 .slider01 .swiper-slide:not(.swiper-slide-active) {
-  opacity: 50%;
+  opacity: 25%;
 }
 
 .slider02 .swiper {
@@ -43,6 +43,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .slider02 .swiper-wrapper {
   width: 418px;
   margin: 0 auto;
@@ -56,6 +57,9 @@
 
 .slider02 .swiper-slide:not(.swiper-slide-active) {
   opacity: 90%;
+}
+
+.slider03 .swiper {
 }
 
 .slider04 .swiper {

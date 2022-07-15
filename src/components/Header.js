@@ -12,10 +12,10 @@ const Header = () => {
             </div>
             <div className="flex flex-row-reverse items-center grow">
               <ul className="hidden md:block xl:block">
-                <li className="mr-48 font-medium text-white md:text-tiny xl:text-tiny opacity-70 hover:opacity-100">
+                <li className="mr-48 font-medium text-white md:text-base xl:text-tiny opacity-70 hover:opacity-100">
                   <a href="">문의하기</a>
                 </li>
-                <li className="font-medium text-white md:text-tiny xl:text-tiny opacity-70 hover:opacity-100">
+                <li className="font-medium text-white md:text-base xl:text-tiny opacity-70 hover:opacity-100">
                   <a href="">입점 및 제휴문의</a>
                 </li>
               </ul>
